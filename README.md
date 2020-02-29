@@ -1,6 +1,6 @@
 # Simple React Form
 
-Contact list built using React + Redux.
+Form built using React + Redux.
 [Demo page](https://jakubjuraszek.github.io/form-generator).
 
 ![](https://i.imgur.com/Co79zeM.png)
