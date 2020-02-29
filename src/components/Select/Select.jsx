@@ -67,7 +67,7 @@ const Select = ({
           <span className="form__label--content">{name}</span>
         </label>
       </section>
-      {errorMessage && <span className="form__field--error">{errorMessage}</span>}
+      <span className="form__field--error">{errorMessage}</span>
     </>
   );
 };
