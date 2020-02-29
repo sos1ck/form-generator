@@ -1,0 +1,31 @@
+.button {
+  font-size: 1.6rem;
+  padding: 10px 25px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  background-color: transparent;
+  font-weight: 700;
+  box-shadow: $button-box-shadow;
+  border: none;
+  transition: background-color 0.3s ease;
+
+  &--primary {
+    background-color: $main-color-lighter;
+    color: $white;
+
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &--default {
+    background-color: $default-background-color-ligter;
+    color: $text-color;
+
+    &:hover {
+      background-color: $default-background-color;
+    }
+  }
+}

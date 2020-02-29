@@ -1,0 +1,120 @@
+.form {
+  &__section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 10px;
+    margin-bottom: 5px;
+
+    &--select {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 39px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-color: $text-color transparent transparent transparent;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__field {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    color: $input-value-color;
+    padding: 20px 0 5px;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    &--select {
+      cursor: pointer;
+      background-color: $white;
+    }
+
+    &--option {
+      color: $text-color;
+      background-color: $white;
+    }
+
+    &--error {
+      color: $error-color;
+      display: inline-block;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+
+    &:focus + .form__label .form__label--content,
+    &--filled + .form__label .form__label--content {
+      transform: translateY(-150%);
+      color: $main-color;
+      font-size: 1.2rem;
+    }
+
+    &:focus + .form__label--error .form__label--content,
+    &--filled + .form__label--error .form__label--content {
+      color: $error-color;
+    }
+
+    &:focus + .form__label::after,
+    &--filled + .form__label::after {
+      transform: translateX(0%);
+    }
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    pointer-events: none;
+    color: $text-color;
+    text-transform: capitalize;
+    border-bottom: 1px solid $text-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      color: $main-color;
+      border-bottom: 2px solid $main-color;
+      left: 0;
+      bottom: -1px;
+      transform: translateX(-100%);
+      transition: transform 0.2s ease, font-size 0.3s ease;
+    }
+
+    &--error {
+      color: $error-color;
+      border-color: $error-color;
+
+      &.form__label {
+        &::after {
+          border-color: $error-color;
+        }
+      }
+    }
+
+    &--content {
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      transition: transform 0.2s ease, font-size 0.3s ease;
+    }
+  }
+
+  &__buttons {
+    text-align: center;
+    padding: 20px 0;
+  }
+}

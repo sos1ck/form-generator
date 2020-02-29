@@ -1,0 +1,13 @@
+export const GET_FORM_DATA = 'GET_FORM_DATA';
+export const GET_FORM_DATA_SUCCESS = 'GET_FORM_DATA_SUCCESS';
+export const GET_FORM_DATA_FAIL = 'GET_FORM_DATA_FAIL';
+
+export const SET_FORM_VALUE = 'SET_FORM_VALUE';
+export const RESET_FORM_VALUE = 'RESET_FORM_VALUE';
+
+export const SET_ERROR_MESSAGE = 'SET_ERROR_MESSAGE';
+export const RESET_ERROR_MESSAGE = 'RESET_ERROR_MESSAGE';
+
+export const RESET_FORM = 'RESET_FORM';
+
+export const SET_ERROR = 'SET_ERROR';

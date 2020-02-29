@@ -1,0 +1,15 @@
+$main-color: #303f9f;
+$main-color-lighter: #1976d2;
+$text-color: rgba(0, 0, 0, 0.5);
+$default-background-color-ligter: #e0e0e0;
+$default-background-color: #d5d5d5;
+$input-value-color: rgba(0, 0, 0, 0.7);
+$body-color: #fafafa;
+$success-color: #4caf50;
+$error-color: #f44336;
+$white: #fff;
+$section-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$button-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+$error-box-shadow-from: inset -3px 0px 0px darken($default-background-color, 20%);
+$error-box-shadow-to: inset -3px 0px 0px transparent;

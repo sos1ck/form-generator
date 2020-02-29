@@ -1,0 +1,25 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    text-align: center;
+    padding-right: 15px;
+    color: darken($default-background-color, 20%);
+    animation: type 0.5s alternate infinite;
+  }
+}
+
+@keyframes type {
+  from {
+    box-shadow: $error-box-shadow-from;
+  }
+  to {
+    box-shadow: $error-box-shadow-to;
+  }
+}
