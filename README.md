@@ -1,7 +1,6 @@
 # Simple React Form
 
 Form built using React + Redux.
-[Demo page](https://jakubjuraszek.github.io/form-generator).
 
 ![](https://i.imgur.com/Co79zeM.png)
 
